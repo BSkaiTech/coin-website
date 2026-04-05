@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$BEARCOIN — The Great Bear of California</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/img/pfp.jpeg" alt="BearCoin Logo" class="logo-img">
+                <span>$BEARCOIN</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#how-to-buy">How to Buy</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+            <a href="#how-to-buy" class="btn btn-primary nav-cta">Buy $BEARCOIN</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-elements">
+            <div class="star star-1">★</div>
+            <div class="star star-2">★</div>
+            <div class="star star-3">★</div>
+            <div class="star star-4">★</div>
+            <div class="star star-5">★</div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">🇺🇸 Born in California · Built on Solana</div>
+                <h1 class="hero-title">
+                    THE GREAT <span class="text-gold">BEAR</span><br>
+                    OF <span class="text-gradient">CALIFORNIA</span>
+                </h1>
+                <p class="hero-subtitle">
+                    The spirit of the California Republic lives on-chain. $BEARCOIN is a tribute to the legendary grizzly bear — the symbol of strength, independence, and the Golden State pride.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://pump.fun" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                        Buy on Pump.fun
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+                </div>
+
+                <!-- CA Address Box -->
+                <div class="ca-box">
+                    <div class="ca-label">CA (Contract Address)</div>
+                    <div class="ca-address-row">
+                        <code class="ca-address" id="caAddress">TBA — Launching on Pump.fun</code>
+                        <button class="copy-btn" id="copyBtn" title="Copy Address">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                            <span class="copy-text">Copy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="coin-avatar" id="coinAvatar">
+                    <div class="coin-glow"></div>
+                    <div class="coin-ring coin-ring-outer"></div>
+                    <div class="coin-ring coin-ring-inner"></div>
+                    <div class="coin-face">
+                        <img src="assets/img/pfp.jpeg" alt="$BEARCOIN" class="coin-pfp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Stats Ticker -->
+    <section class="stats-ticker">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">1B</div>
+                    <div class="stat-label">Total Supply</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">0%</div>
+                    <div class="stat-label">Tax</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Community Owned</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">SOL</div>
+                    <div class="stat-label">Blockchain</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About the Project</span>
+                <h2 class="section-title">What is <span class="text-gold">$BEARCOIN</span>?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🐻</div>
+                    <h3>The California Grizzly</h3>
+                    <p>$BEARCOIN is a tribute to the mighty California Grizzly Bear — the icon on the state flag and a symbol of unyielding strength. Once the apex predator of the Golden State, the grizzly represents the fierce independence that defines California.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🏛️</div>
+                    <h3>California Republic Spirit</h3>
+                    <p>In 1846, settlers raised the Bear Flag and declared the California Republic. That same rebellious, pioneering spirit fuels $BEARCOIN — a community-driven token that stands for freedom, innovation, and West Coast pride.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">⛓️</div>
+                    <h3>Built on Solana</h3>
+                    <p>Launched fair on Pump.fun with zero presale, zero team allocation, and zero tax. $BEARCOIN is 100% community-owned — the way crypto was meant to be. Fast, cheap transactions powered by Solana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- California Pride Section -->
+    <section class="pride-section" id="history">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Golden State Heritage</span>
+                <h2 class="section-title">Pride of <span class="text-gradient">California</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">The Bear Flag</div>
+                        <h3>Symbol of Independence</h3>
+                        <p>The California state flag features a grizzly bear walking on a patch of green grass, with a single red star above it and a red stripe below. The flag, known as the "Bear Flag," has been California's official state symbol since 1911, rooted in the Bear Flag Revolt of 1846 when American settlers declared independence from Mexico.</p>
+                        <img src="assets/img/BEARCOIN.jpg" alt="$BEARCOIN — Bear of California" class="timeline-image">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">The Grizzly Legacy</div>
+                        <h3>Monarch of the West</h3>
+                        <p>The California Grizzly Bear (Ursus arctos californicus) was once the most powerful predator on the Pacific coast. Known for their immense size and fearless nature, these bears were deeply revered by Native Americans and early settlers. The last California grizzly was spotted in 1924, but its legacy endures on the state flag as an eternal symbol of strength and resilience.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">The Golden State</div>
+                        <h3>Innovation Capital of the World</h3>
+                        <p>From the Gold Rush of 1849 to Silicon Valley's tech revolution, California has always been a land of dreamers and builders. As the world's 5th largest economy, California leads in technology, entertainment, agriculture, and now — crypto. $BEARCOIN carries this legacy into the decentralized future.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">American Pride</div>
+                        <h3>United We Stand</h3>
+                        <p>California is the most populous state in the Union and a cornerstone of American power and culture. From the beaches of Malibu to the peaks of the Sierra Nevada, from Hollywood to Yosemite — California embodies the American Dream. $BEARCOIN celebrates this patriotic spirit on the blockchain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section class="tokenomics" id="tokenomics">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Token Details</span>
+                <h2 class="section-title"><span class="text-gold">Tokenomics</span></h2>
+            </div>
+            <div class="tokenomics-grid">
+                <div class="token-card featured">
+                    <div class="token-card-header">
+                        <h3>Fair Launch</h3>
+                        <span class="badge">Pump.fun</span>
+                    </div>
+                    <ul class="token-details">
+                        <li>
+                            <span class="detail-label">Token Name</span>
+                            <span class="detail-value">BearCoin</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">Ticker</span>
+                            <span class="detail-value">$BEARCOIN</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">Network</span>
+                            <span class="detail-value">Solana (SPL)</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">Total Supply</span>
+                            <span class="detail-value">1,000,000,000</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">Tax</span>
+                            <span class="detail-value highlight">0% Buy / 0% Sell</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">Presale</span>
+                            <span class="detail-value highlight">None</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="token-card">
+                    <div class="token-card-header">
+                        <h3>Distribution</h3>
+                    </div>
+                    <div class="distribution-chart">
+                        <div class="chart-ring">
+                            <svg viewBox="0 0 200 200">
+                                <circle cx="100" cy="100" r="80" fill="none" stroke="#1a1a2e" stroke-width="25"/>
+                                <circle cx="100" cy="100" r="80" fill="none" stroke="url(#goldGradient)" stroke-width="25" stroke-dasharray="502.6" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 100 100)"/>
+                                <defs>
+                                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#FFD700"/>
+                                        <stop offset="100%" stop-color="#B8860B"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="chart-center">
+                                <span class="chart-percent">100%</span>
+                                <span class="chart-label">Community</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="distribution-legend">
+                        <div class="legend-item">
+                            <span class="legend-dot" style="background: #FFD700;"></span>
+                            <span>100% Fair Launch — No team tokens, no VC allocation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section class="how-to-buy" id="how-to-buy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get Started</span>
+                <h2 class="section-title">How to Buy <span class="text-gold">$BEARCOIN</span></h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Create a Wallet</h3>
+                    <p>Download <strong>Phantom</strong> or <strong>Solflare</strong> wallet from the official app store or browser extension. Set up your wallet and securely store your seed phrase.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Get SOL</h3>
+                    <p>Purchase <strong>SOL</strong> from a centralized exchange like Coinbase or Binance, then send it to your Solana wallet address.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Go to Pump.fun</h3>
+                    <p>Visit <strong>pump.fun</strong> and search for <strong>$BEARCOIN</strong> or paste the contract address. Connect your wallet to the platform.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>Swap SOL for $BEARCOIN</h3>
+                    <p>Enter the amount of SOL you want to swap, confirm the transaction in your wallet, and you're now a proud holder of <strong>$BEARCOIN</strong>! 🐻</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles" id="articles">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Learn More</span>
+                <h2 class="section-title">Featured <span class="text-gold">Articles</span></h2>
+            </div>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(135deg, #1a3a5c, #0d1b2a);">
+                        <span class="article-emoji">🏴</span>
+                    </div>
+                    <div class="article-body">
+                        <span class="article-tag">History</span>
+                        <h3>The Bear Flag Revolt: How California Became a Republic</h3>
+                        <p>In June 1846, a group of American settlers in Sonoma declared independence from Mexico and raised a homemade flag featuring a grizzly bear and a lone star. Though the California Republic lasted only 25 days before being absorbed into the United States during the Mexican-American War, the Bear Flag became an enduring symbol of Californian identity and self-determination. The flag's grizzly represents courage and strength — values that $BEARCOIN carries into the digital age.</p>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(135deg, #3a1a0a, #1a0d05);">
+                        <span class="article-emoji">🐻</span>
+                    </div>
+                    <div class="article-body">
+                        <span class="article-tag">Wildlife</span>
+                        <h3>The California Grizzly: Rise and Fall of an Icon</h3>
+                        <p>The California Grizzly Bear once roamed freely from the southern deserts to the northern forests. These magnificent creatures could weigh up to 2,000 pounds and were revered by the indigenous peoples for their power. Sadly, by 1924, hunting and habitat loss drove the California Grizzly to extinction. Today, it lives on as the centerpiece of the California state flag — a reminder of what was lost and a symbol of what must be protected. $BEARCOIN immortalizes the grizzly spirit on the blockchain forever.</p>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(135deg, #5c4a1a, #2a2008);">
+                        <span class="article-emoji">⛏️</span>
+                    </div>
+                    <div class="article-body">
+                        <span class="article-tag">Heritage</span>
+                        <h3>From Gold Rush to Crypto Rush: California's Pioneer Spirit</h3>
+                        <p>In 1848, James W. Marshall discovered gold at Sutter's Mill, sparking the California Gold Rush that brought over 300,000 prospectors to the West. This pioneering spirit transformed California into the economic powerhouse it is today. Now, a new rush is underway — the crypto revolution. Just as forty-niners sought fortune in the Sierra foothills, today's pioneers seek opportunity on the blockchain. $BEARCOIN bridges California's legendary past with its decentralized future.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Join the Pack</span>
+                <h2 class="section-title">Community <span class="text-gold">Hub</span></h2>
+                <p class="section-desc">Join thousands of CA Bear patriots. Together, we're stronger.</p>
+            </div>
+            <div class="social-grid social-grid-2">
+                <a href="https://x.com/DariusMEvans" class="social-card" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </div>
+                    <h3>X (Twitter)</h3>
+                    <p>Follow for updates, memes, and CA Bear alpha</p>
+                </a>
+                <a href="https://t.me/@scorpion0419" class="social-card" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p>Real-time discussion, announcements, and bear market survival</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CA Address Footer Banner -->
+    <section class="ca-banner">
+        <div class="container">
+            <div class="ca-banner-content">
+                <h3>Contract Address (CA)</h3>
+                <div class="ca-banner-address">
+                    <code id="caAddressFooter">TBA — Launching on Pump.fun</code>
+                    <button class="copy-btn copy-btn-light" onclick="copyAddress()" title="Copy Address">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        Copy
+                    </button>
+                </div>
+                <p class="ca-disclaimer">Always verify the contract address. Never trust links from unofficial sources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/img/pfp.jpeg" alt="BearCoin Logo" class="logo-img">
+                        <span>$BEARCOIN</span>
+                    </div>
+                    <p>The Great Bear of California. A community token celebrating the spirit, heritage, and pride of the Golden State.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="#about">About</a>
+                    <a href="#tokenomics">Tokenomics</a>
+                    <a href="#history">History</a>
+                    <a href="#how-to-buy">How to Buy</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="https://pump.fun" target="_blank" rel="noopener noreferrer">Pump.fun</a>
+                    <a href="https://solscan.io" target="_blank" rel="noopener noreferrer">Solscan</a>
+                    <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer">DexScreener</a>
+                    <a href="https://birdeye.so" target="_blank" rel="noopener noreferrer">Birdeye</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Community</h4>
+                    <a href="https://x.com/DariusMEvans" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+                    <a href="https://t.me/@scorpion0419" target="_blank" rel="noopener noreferrer">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-flag">
+                    <span class="flag-stripe red"></span>
+                    <span class="flag-stripe white"></span>
+                    <span class="flag-stripe red"></span>
+                </div>
+                <p>&copy; 2026 $BEARCOIN. All rights reserved. Not financial advice. DYOR.</p>
+                <p class="footer-patriot">Made with ❤️ in the Golden State 🇺🇸</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
