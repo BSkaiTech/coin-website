@@ -31,8 +31,8 @@ if (mobileMenuBtn) {
 // ===== COPY CONTRACT ADDRESS =====
 function copyAddress() {
     const address = document.getElementById('caAddress').textContent;
-    if (address.includes('TBA')) {
-        return; // Don't copy placeholder
+    if (!address || address.includes('TBA')) {
+        return;
     }
     navigator.clipboard.writeText(address).then(() => {
         showCopyFeedback();
